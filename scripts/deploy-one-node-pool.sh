@@ -3,20 +3,20 @@
 # Variables
 
 # AKS cluster name
-aksName="<AKS cluster name>"
+aksName="private-aks-cluster"
 
 # ARM template and parameters file
 template="../templates/one-node-pool/azuredeploy.json"
 parameters="../templates/one-node-pool/azuredeploy.parameters.json"
 
 # Name and location of the resource group for the Azure Kubernetes Service (AKS) cluster
-aksResourceGroup="<AKS resource group name>"
-location="<Region>"
+aksResourceGroup="DJTE-EASTUS-RG"
+location="norwayeast"
 
 # Name and resource group name of the Azure Container Registry used by the AKS cluster.
 # The name of the cluster is also used to create or select an existing admin group in the Microsoft Entra ID tenant.
-acrName="<ACR name>"
-acrResourceGroup="<ACR resource group name>"
+acrName="devjacre"
+acrResourceGroup="DEVJ-RG"
 acrSku="Basic"
 
 # SubscriptionId and tenantId of the current subscription
